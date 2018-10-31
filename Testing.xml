@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" parallel="tests" >
+	<test name="TC001_UserSignIn">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC001_UserSignIn"></class></classes></test>
+	<test name="TC002_CheckRefrenceMaterials">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials"></class></classes></test>
+	<test name="TC003_RequestAdditionalVenderNumber">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber"></class></classes></test>
+	<test name="TC004_LoginAndLogoutFunctionality">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality"></class></classes></test>
+	<test name="TC005_NavigateToSettingsAndCheckMenus">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus"></class></classes></test>
+	<test name="TC006_CheckSuppliersInvoiceStatus">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus"></class></classes></test>
+	<test name="TC007_ForgotPassword">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC007_ForgotPassword"></class></classes></test>
+	<test name="TC008_RegistrationScenario">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC008_RegistrationScenario"></class></classes></test>
+	<test name="TC009_ToggleHome">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="BP.SISP.Portal.PortalTests.TC009_ToggleHome"></class></classes></test>
+
+</suite>

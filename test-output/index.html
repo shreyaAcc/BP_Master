@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestSuite">
+              <span class="suite-name border-failed">TestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestSuite">
+                    <span>C:\Users\Shreya.upadhyay\eclipse-workspace\BP_Project\Testing.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestSuite">
+                    <span class="test-stats">9 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality" hash-for-method="LogoutFromApplication">LogoutFromApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC009_ToggleHome" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus" hash-for-method="CheckSettingsPage">CheckSettingsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials" hash-for-method="ClickOnReferenceMaterial">ClickOnReferenceMaterial</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber" hash-for-method="ClickOnRequestAdditionalInfo">ClickOnRequestAdditionalInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC007_ForgotPassword" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC009_ToggleHome" hash-for-method="ForgotPassword">ForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC008_RegistrationScenario" hash-for-method="LegalNoticeTab">LegalNoticeTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC008_RegistrationScenario" hash-for-method="Register">Register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC007_ForgotPassword" hash-for-method="ResetLoginDetails">ResetLoginDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus" hash-for-method="SearchInvoice">SearchInvoice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC008_RegistrationScenario" hash-for-method="SupplierRegistration">SupplierRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC001_UserSignIn" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus" hash-for-method="TestLogin">TestLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC007_ForgotPassword" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="BP.SISP.Portal.PortalTests.TC008_RegistrationScenario" hash-for-method="WelcomePage">WelcomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogoutFromApplication">
+                  </a> <!-- LogoutFromApplication -->
+                  <span class="method-name">LogoutFromApplication</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.linkText: Sign in again (tried for 230 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at BP.SISP.Portal.PortalPages.LogoutPage.LogOut(LogoutPage.java:49)
+	at BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality.LogoutFromApplication(TC004_LoginAndLogoutFunctionality.java:80)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.linkText: Sign in again
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;BDC11-L-JVXCNN2&apos;, ip: &apos;10.246.56.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 22 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC009_ToggleHome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WelcomePage">
+                  </a> <!-- WelcomePage -->
+                  <span class="method-name">WelcomePage</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;BDC11-L-JVXCNN2&apos;, ip: &apos;10.246.56.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49749}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true, webdriver.remote.sessionid: 84957a3dbbbd4006bc82e430079...}
+Session ID: 84957a3dbbbd4006bc82e430079272c6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at BP.SISP.Portal.PortalPages.HomePage.CheckCurrentPage(HomePage.java:149)
+	at BP.SISP.Portal.PortalTests.TC009_ToggleHome.WelcomePage(TC009_ToggleHome.java:63)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC001_UserSignIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnReferenceMaterial">
+                  </a> <!-- ClickOnReferenceMaterial -->
+                  <span class="method-name">ClickOnReferenceMaterial</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnRequestAdditionalInfo">
+                  </a> <!-- ClickOnRequestAdditionalInfo -->
+                  <span class="method-name">ClickOnRequestAdditionalInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC009_ToggleHome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPassword">
+                  </a> <!-- ForgotPassword -->
+                  <span class="method-name">ForgotPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchInvoice">
+                  </a> <!-- SearchInvoice -->
+                  <span class="method-name">SearchInvoice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC007_ForgotPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotPassword">
+                  </a> <!-- ForgotPassword -->
+                  <span class="method-name">ForgotPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetLoginDetails">
+                  </a> <!-- ResetLoginDetails -->
+                  <span class="method-name">ResetLoginDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WelcomePage">
+                  </a> <!-- WelcomePage -->
+                  <span class="method-name">WelcomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC008_RegistrationScenario</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LegalNoticeTab">
+                  </a> <!-- LegalNoticeTab -->
+                  <span class="method-name">LegalNoticeTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register">
+                  </a> <!-- Register -->
+                  <span class="method-name">Register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SupplierRegistration">
+                  </a> <!-- SupplierRegistration -->
+                  <span class="method-name">SupplierRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WelcomePage">
+                  </a> <!-- WelcomePage -->
+                  <span class="method-name">WelcomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckSettingsPage">
+                  </a> <!-- CheckSettingsPage -->
+                  <span class="method-name">CheckSettingsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin">
+                  </a> <!-- TestLogin -->
+                  <span class="method-name">TestLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+        </div> <!-- panel TestSuite -->
+        <div panel-name="test-xml-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Shreya.upadhyay\eclipse-workspace\BP_Project\Testing.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC001_UserSignIn&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC001_UserSignIn&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC001_UserSignIn --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC002_CheckRefrenceMaterials&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC002_CheckRefrenceMaterials --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC003_RequestAdditionalVenderNumber&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC003_RequestAdditionalVenderNumber --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC004_LoginAndLogoutFunctionality&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC004_LoginAndLogoutFunctionality --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC005_NavigateToSettingsAndCheckMenus&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC005_NavigateToSettingsAndCheckMenus --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC006_CheckSuppliersInvoiceStatus&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC006_CheckSuppliersInvoiceStatus --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC007_ForgotPassword&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC007_ForgotPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC007_ForgotPassword --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC008_RegistrationScenario&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC008_RegistrationScenario&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC008_RegistrationScenario --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TC009_ToggleHome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BP.SISP.Portal.PortalTests.TC009_ToggleHome&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TC009_ToggleHome --&gt;
+&lt;/suite&gt; &lt;!-- TestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TC001_UserSignIn (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC002_CheckRefrenceMaterials (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC003_RequestAdditionalVenderNumber (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC004_LoginAndLogoutFunctionality (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC005_NavigateToSettingsAndCheckMenus (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC006_CheckSuppliersInvoiceStatus (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC007_ForgotPassword (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC008_RegistrationScenario (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TC009_ToggleHome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuite');
+function tableData_TestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LogoutFromApplication')
+data.setCell(0, 2, 'BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality')
+data.setCell(0, 3, 256891);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestLogin')
+data.setCell(1, 2, 'BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality')
+data.setCell(1, 3, 30429);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestLogin')
+data.setCell(2, 2, 'BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials')
+data.setCell(2, 3, 29954);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestLogin')
+data.setCell(3, 2, 'BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber')
+data.setCell(3, 3, 29223);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestLogin')
+data.setCell(4, 2, 'BP.SISP.Portal.PortalTests.TC001_UserSignIn')
+data.setCell(4, 3, 28196);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestLogin')
+data.setCell(5, 2, 'BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus')
+data.setCell(5, 3, 26456);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestLogin')
+data.setCell(6, 2, 'BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus')
+data.setCell(6, 3, 23051);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CheckSettingsPage')
+data.setCell(7, 2, 'BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus')
+data.setCell(7, 3, 15689);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ClickOnRequestAdditionalInfo')
+data.setCell(8, 2, 'BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber')
+data.setCell(8, 3, 9371);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'WelcomePage')
+data.setCell(9, 2, 'BP.SISP.Portal.PortalTests.TC007_ForgotPassword')
+data.setCell(9, 3, 8396);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'LegalNoticeTab')
+data.setCell(10, 2, 'BP.SISP.Portal.PortalTests.TC008_RegistrationScenario')
+data.setCell(10, 3, 8177);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SupplierRegistration')
+data.setCell(11, 2, 'BP.SISP.Portal.PortalTests.TC008_RegistrationScenario')
+data.setCell(11, 3, 7714);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'WelcomePage')
+data.setCell(12, 2, 'BP.SISP.Portal.PortalTests.TC008_RegistrationScenario')
+data.setCell(12, 3, 7572);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'WelcomePage')
+data.setCell(13, 2, 'BP.SISP.Portal.PortalTests.TC009_ToggleHome')
+data.setCell(13, 3, 7004);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'SearchInvoice')
+data.setCell(14, 2, 'BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus')
+data.setCell(14, 3, 6605);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ResetLoginDetails')
+data.setCell(15, 2, 'BP.SISP.Portal.PortalTests.TC007_ForgotPassword')
+data.setCell(15, 3, 4730);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ForgotPassword')
+data.setCell(16, 2, 'BP.SISP.Portal.PortalTests.TC009_ToggleHome')
+data.setCell(16, 3, 4660);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ClickOnReferenceMaterial')
+data.setCell(17, 2, 'BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials')
+data.setCell(17, 3, 3514);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ForgotPassword')
+data.setCell(18, 2, 'BP.SISP.Portal.PortalTests.TC007_ForgotPassword')
+data.setCell(18, 3, 2312);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Register')
+data.setCell(19, 2, 'BP.SISP.Portal.PortalTests.TC008_RegistrationScenario')
+data.setCell(19, 3, 2199);
+window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-TestSuite">
+              </div> <!-- times-div-TestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC001_UserSignIn</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">19571 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC001_UserSignIn</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">21663 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC002_CheckRefrenceMaterials</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ClickOnReferenceMaterial</span>
+                <span class="method-start">49548 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">50577 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">53082 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">155011 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">155852 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC003_RequestAdditionalVenderNumber</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ClickOnRequestAdditionalInfo</span>
+                <span class="method-start">184237 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC004_LoginAndLogoutFunctionality</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LogoutFromApplication</span>
+                <span class="method-start">186284 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC005_NavigateToSettingsAndCheckMenus</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">194354 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">300140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckSettingsPage</span>
+                <span class="method-start">326599 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">342992 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC007_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">443911 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC006_CheckSuppliersInvoiceStatus</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogin</span>
+                <span class="method-start">455971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchInvoice</span>
+                <span class="method-start">479025 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC008_RegistrationScenario</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">486340 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC007_ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">WelcomePage</span>
+                <span class="method-start">546280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ForgotPassword</span>
+                <span class="method-start">554678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ResetLoginDetails</span>
+                <span class="method-start">556991 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC009_ToggleHome</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">562427 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC008_RegistrationScenario</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">WelcomePage</span>
+                <span class="method-start">590661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Register</span>
+                <span class="method-start">598235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LegalNoticeTab</span>
+                <span class="method-start">600435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SupplierRegistration</span>
+                <span class="method-start">608614 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BP.SISP.Portal.PortalTests.TC009_ToggleHome</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WelcomePage</span>
+                <span class="method-start">669020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ForgotPassword</span>
+                <span class="method-start">676028 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
